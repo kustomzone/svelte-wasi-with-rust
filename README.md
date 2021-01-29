@@ -1,9 +1,9 @@
 # Svelte Rust/WASI in Browser Example
 
 This example uses Rust Web Assembly compiled for WASI (the Web Assembly
-System Interface) running in the browser using [WasmerJS]("https://github.com/wasmerio/wasmer-js), and uses `wasm-bindgen` to make it easy to pass data from JavaScript to Rust and vice versa.
+System Interface) running in the browser using [WasmerJS](https://github.com/wasmerio/wasmer-js), and uses `wasm-bindgen` to make it easy to pass data from JavaScript to Rust and vice versa.
 
-(For how `wasm-bindgen` does this, see Lin Clark's excellent [explainer]("https://hacks.mozilla.org/2018/06/babys-first-rustwebassembly-module-say-hi-to-jsconf-eu/") under "Linear memory, the easy way" and "Linear memory, the hard way")
+(For how `wasm-bindgen` does this, see Lin Clark's excellent [explainer](https://hacks.mozilla.org/2018/06/babys-first-rustwebassembly-module-say-hi-to-jsconf-eu/) under "Linear memory, the easy way" and "Linear memory, the hard way")
 
 Rust is compiled for target `wasm32-wasi` and bindings are generated using
 `wasm-bindgen` plus a small amount of post-processing to adapt the bindings for
